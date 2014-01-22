@@ -11,10 +11,10 @@ describe "some silly block functions" do
       # You might be tempted to ask yourself what the hell is happening here.
       # Well no worries! Superman is here to the rescue!
       # (Heh, you probably don't even know whose written these comments.)
-      # 
+      #
       # Let's look at this snippet of code in particular:
-      # 
-      # reverser do 
+      #
+      # reverser do
       #   "hello"
       # end
       #
@@ -22,24 +22,24 @@ describe "some silly block functions" do
       # except the string is not being passed in as a parameter. It's being passed in as a do-end block.
       # The way this method can get that do-end block is through yield.
       #
-      # def example 
-      #   string = yield # yield is equal to... 
+      # def example
+      #   string = yield # yield is equal to...
       #   string.upcase
       # end
-      # 
-      # example do 
+      #
+      # example do
       #   "My name is Will Richman." # ...this line
       # end
-      # 
+      #
       # So to get this test to pass the reverser method would look like:
-      # 
+      #
       # def reverser
       #   yield.reverse
       # end
     end
 
     it "reverses each word in the string returned by the default block" do
-      # Now edit the reverser method above to get this test to pass 
+      # Now edit the reverser method above to get this test to pass
       result = reverser do
         "hello dolly"
       end
