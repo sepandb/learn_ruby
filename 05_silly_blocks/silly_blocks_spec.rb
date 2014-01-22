@@ -73,7 +73,6 @@ describe "some silly block functions" do
       end
       n.should == 5
     end
-
     it "executes the default block 3 times" do
       n = 0
       repeater(3) do
