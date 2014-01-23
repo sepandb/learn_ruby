@@ -2,13 +2,13 @@ require "array_extensions" # we don't call it "array.rb" since that would be con
 
 describe Array do
 
-  describe "#sum" do
+  describe "sum" do
     # it "has a #sum method" do
     #   [].should respond_to(:sum)
     #   Array.should respond_to(:sum)
       # [] and Array are synonymous
-      # 
-      # Whoa! Hold on! We're expected to add a method 
+      #
+      # Whoa! Hold on! We're expected to add a method
       # to a class that already exists inside of Ruby?
       # Well, yes. And the way you can do that is quite easy:
       #
@@ -30,7 +30,7 @@ describe Array do
     end
   end
 
-  describe '#square' do
+  describe 'square' do
     it "does nothing to an empty array" do
       [].square.should == []
     end
@@ -40,7 +40,7 @@ describe Array do
     end
   end
 
-  describe '#square!' do
+  describe 'square!' do
     it "squares each element of the original array" do
       array = [1,2,3]
       array.square!
