@@ -2,10 +2,10 @@
 # Take your time, don't be scared to ask for help–
 # we're pushing your limits, if you can do it you'll be in an amazing position moving forward.
 
-# Remember one degree fahrenheit is 5/9 of one degree celsius, 
+# Remember one degree fahrenheit is 5/9 of one degree celsius,
 # and the freezing point of water is 0 degrees celsius but 32 degrees fahrenheit.
 
-require "temperature"
+require_relative "temperature"
 
 describe Temperature do
 
@@ -16,13 +16,13 @@ describe Temperature do
         Temperature.new({:f => 50}).to_fahrenheit.should == 50
         # Remember, new is synonymous with initialize.
         # An example might help:
-        # 
+        #
         # class Person
         #   def initialize(name)
         #     @name = name
         #   end
         # end
-        # 
+        #
         # Person.new("Alex")
       end
 
@@ -70,7 +70,7 @@ describe Temperature do
       Temperature.in_celsius(50).to_fahrenheit.should == 122
       # Nothing different is being achieved with these two lines,
       # they're just a different way of doing the same thing,
-      # that requires you to write your code another way. 
+      # that requires you to write your code another way.
       #
       # Remember, methods called on a class are called class methods.
       # Here's an example:
